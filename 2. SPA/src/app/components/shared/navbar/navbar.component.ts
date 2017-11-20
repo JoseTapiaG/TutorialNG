@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
   }
 
   buscarHeroe(nombre:string){
-    
+    this.router.navigate(['/heroe', id])
   }
 
 }
