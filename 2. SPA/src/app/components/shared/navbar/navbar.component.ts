@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroesService } from '../../../services/heroes.service';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,17 +11,13 @@ export class NavbarComponent implements OnInit {
 
   heroes:any[];
 
-  constructor(private activatedRoute:ActivatedRoute,
+  constructor(private router:Router,
               private _heroeService:HeroesService) { }
 
-  ngOnInit() {
-    this.activatedRoute.params.subscribe( params => {
-      this.heroes = this._heroeService.buscarHeroe(params["termino"]);
-    });
-  }
+  ngOnInit() {}
 
   buscarHeroe(nombre:string){
-    this.router.navigate(['/heroe', id])
+    this.router.navigate(['/heroes', nombre]);
   }
 
 }
