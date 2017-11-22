@@ -1,3 +1,15 @@
-<p>
-  search works!
-</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-3">
+      <label for="termino">Buscar artista</label>
+      <input type="text" placeholder="Busque artista..."
+            class="form-control"
+            (keyup)="buscarArtista()"
+            [(ngModel)]="termino">
+    </div>
+    <div *ngIf="termino" class="col-md-9">
+      <h1>{{termino}}</h1>
+      <hr>
+    </div>
+  </div>
+</div>

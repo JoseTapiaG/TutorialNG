@@ -34,4 +34,7 @@ export class AppComponent {
   });
 
   fecha = new Date();
+
+  password = "testasd";
+  activar = true;
 }
