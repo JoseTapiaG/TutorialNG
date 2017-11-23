@@ -8,6 +8,8 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) { }
 
+  artistas = [];
+
   getArtistas() {
     let url = "";
 

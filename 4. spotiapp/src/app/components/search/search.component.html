@@ -8,8 +8,18 @@
             [(ngModel)]="termino">
     </div>
     <div *ngIf="termino" class="col-md-9">
-      <h1>{{termino}}</h1>
+      <h1 class="text-capitalize">{{termino}}</h1>
       <hr>
+      <div class="row">
+        <div **ngFor="let artista of _spotify.artistas" class="col-md-3 text-center puntero"
+              [routerLink]="['/artist', artista.id]">
+          <img [src]="artista.images | sinfoto"
+                class="img-thumbnail">
+          <p>
+            {{artista.name}}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

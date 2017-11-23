@@ -10,7 +10,7 @@ export class SearchComponent implements OnInit {
 
   termino = "";
 
-  constructor(private spotifyService: SpotifyService) { }
+  constructor(private _spotify: SpotifyService) { }
 
   ngOnInit() {
   }
