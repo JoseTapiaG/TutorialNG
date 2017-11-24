@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit {
   }
 
   buscarArtista(){
-    console.log(this.termino);
+    
   }
 
 }

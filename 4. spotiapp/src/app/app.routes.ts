@@ -7,6 +7,7 @@ const app_routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'artist/:id', component: ArtistComponent },
   { path: 'search', component: SearchComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
