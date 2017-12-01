@@ -2,5 +2,7 @@
   "name": "deseos",
   "app_id": "79f8add4",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
